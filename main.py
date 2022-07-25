@@ -10,7 +10,7 @@ def main():
     st.title('Streamlit Title')
     st.write('2022-07-25 Ryo Takashima')
 
-    df = pd.read_csv("C:/Users/1487006/python/Streamlit_TEST/csv_data.csv")# , encoding = "shift-jis")
+    df = pd.read_csv("csv_data.csv")# , encoding = "shift-jis")
     df = df.sort_values(['ファンド名','取得日時'])
     
     fand = df["ファンド名"].unique()
